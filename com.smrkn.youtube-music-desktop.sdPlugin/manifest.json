@@ -6,7 +6,7 @@
 		{
 			"Name": "Play/Pause",
 			"UUID": "com.smrkn.youtube-music-desktop.play-pause",
-			"Icon": "imgs/actions/playpause/icon",
+			"Icon": "imgs/actions/pause",
 			"Tooltip": "Toggle playback of the current track",
 			"Controllers": [
 				"Keypad"
@@ -19,7 +19,39 @@
 				},
 				{
 					"Name": "Play",
-					"Image": "imgs/actions/play",
+					"Image": "imgs/actions/play_arrow",
+					"TitleAlignment": "bottom"
+				}
+			]
+		},
+		{
+			"Name": "Play",
+			"UUID": "com.smrkn.youtube-music-desktop.play",
+			"Icon": "imgs/actions/play_arrow",
+			"Tooltip": "Resume playback of the current track",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Name": "Play",
+					"Image": "imgs/actions/play_arrow",
+					"TitleAlignment": "bottom"
+				}
+			]
+		},
+		{
+			"Name": "Pause",
+			"UUID": "com.smrkn.youtube-music-desktop.pause",
+			"Icon": "imgs/actions/pause",
+			"Tooltip": "Pause playback of the current track",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Name": "Pause",
+					"Image": "imgs/actions/pause",
 					"TitleAlignment": "bottom"
 				}
 			]
@@ -27,7 +59,7 @@
 		{
 			"Name": "Next",
 			"UUID": "com.smrkn.youtube-music-desktop.next",
-			"Icon": "imgs/actions/next/icon",
+			"Icon": "imgs/actions/skip_next",
 			"Tooltip": "Play the next track",
 			"Controllers": [
 				"Keypad"
@@ -35,8 +67,7 @@
 			"States": [
 				{
 					"Name": "Next",
-					"Title": "Next",
-					"Image": "imgs/actions/next",
+					"Image": "imgs/actions/skip_next",
 					"TitleAlignment": "bottom"
 				}
 			]
@@ -44,7 +75,7 @@
 		{
 			"Name": "Previous",
 			"UUID": "com.smrkn.youtube-music-desktop.previous",
-			"Icon": "imgs/actions/previous/icon",
+			"Icon": "imgs/actions/skip_previous",
 			"Tooltip": "Play the previous track",
 			"Controllers": [
 				"Keypad"
@@ -52,8 +83,7 @@
 			"States": [
 				{
 					"Name": "Previous",
-					"Title": "Previous",
-					"Image": "imgs/actions/previous",
+					"Image": "imgs/actions/skip_previous",
 					"TitleAlignment": "bottom"
 				}
 			]

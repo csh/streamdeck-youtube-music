@@ -1,12 +1,18 @@
-import streamDeck, { LogLevel } from "@elgato/streamdeck";
+import streamDeck from "@elgato/streamdeck";
 
 import { PlayPauseAction } from "./actions/play-pause.action";
-import { NextAction } from "./actions/next.action";
 import { PreviousAction } from "./actions/previous.action";
+import { PauseAction } from "./actions/pause.action";
+import { NextAction } from "./actions/next.action";
+import { PlayAction } from "./actions/play.action";
+
 import { YouTubeMusicSettings } from "./settings";
 
 // Register the increment action.
 streamDeck.actions.registerAction(new PlayPauseAction());
+streamDeck.actions.registerAction(new PauseAction());
+streamDeck.actions.registerAction(new PlayAction());
+
 streamDeck.actions.registerAction(new PreviousAction());
 streamDeck.actions.registerAction(new NextAction());
 
