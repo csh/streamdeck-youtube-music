@@ -1,0 +1,91 @@
+{
+	"Name": "YouTube Music Desktop",
+	"Version": "0.1.0.0",
+	"Author": "smrkn",
+	"Actions": [
+		{
+			"Name": "Play/Pause",
+			"UUID": "com.smrkn.youtube-music-desktop.play-pause",
+			"Icon": "imgs/actions/playpause/icon",
+			"Tooltip": "Play or pause the current track.",
+			"UserTitleEnabled": false,
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Name": "Paused",
+					"Title": "Paused",
+					"Image": "imgs/actions/play",
+					"TitleAlignment": "middle"
+				},
+				{
+					"Name": "Play",
+					"Title": "Playing",
+					"Image": "imgs/actions/play",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Next Song",
+			"UUID": "com.smrkn.youtube-music-desktop.next",
+			"Icon": "imgs/actions/next/icon",
+			"Tooltip": "Next track.",
+			"UserTitleEnabled": false,
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Name": "Next",
+					"Title": "Next",
+					"Image": "imgs/actions/next",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Previous Song",
+			"UUID": "com.smrkn.youtube-music-desktop.previous",
+			"Icon": "imgs/actions/previous/icon",
+			"Tooltip": "previous track.",
+			"UserTitleEnabled": false,
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Name": "Previous",
+					"Title": "Previous",
+					"Image": "imgs/actions/previous",
+					"TitleAlignment": "middle"
+				}
+			]
+		}
+	],
+	"Category": "YouTube Music Desktop",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Integration with th-ch/youtube-music",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.4"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"UUID": "com.smrkn.youtube-music-desktop"
+}
