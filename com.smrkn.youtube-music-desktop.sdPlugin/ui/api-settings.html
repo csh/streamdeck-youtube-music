@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>YouTube Music Desktop Settings</title>
+    <meta charset="utf-8" />
+    <script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+    <!-- <script type="text/javascript">
+        SDPIComponents.i18n.locales = {
+            en: {
+                "host": "Host",
+                "port": "Port"
+            }
+        }
+    </script> -->
+</head>
+
+<body>
+    <sdpi-item label="Host">
+        <sdpi-textfield setting="host" global placeholder="127.0.0.1" required></sdpi-textfield>
+    </sdpi-item>
+
+    <sdpi-item label="Port">
+        <sdpi-textfield setting="port" global placeholder="26538" required></sdpi-textfield>
+    </sdpi-item>
+</body>
+
+</html>

@@ -7,32 +7,28 @@
 			"Name": "Play/Pause",
 			"UUID": "com.smrkn.youtube-music-desktop.play-pause",
 			"Icon": "imgs/actions/playpause/icon",
-			"Tooltip": "Play or pause the current track.",
-			"UserTitleEnabled": false,
+			"Tooltip": "Toggle playback of the current track",
 			"Controllers": [
 				"Keypad"
 			],
 			"States": [
 				{
-					"Name": "Paused",
-					"Title": "Paused",
-					"Image": "imgs/actions/play",
-					"TitleAlignment": "middle"
+					"Name": "Pause",
+					"Image": "imgs/actions/pause",
+					"TitleAlignment": "bottom"
 				},
 				{
 					"Name": "Play",
-					"Title": "Playing",
 					"Image": "imgs/actions/play",
-					"TitleAlignment": "middle"
+					"TitleAlignment": "bottom"
 				}
 			]
 		},
 		{
-			"Name": "Next Song",
+			"Name": "Next",
 			"UUID": "com.smrkn.youtube-music-desktop.next",
 			"Icon": "imgs/actions/next/icon",
-			"Tooltip": "Next track.",
-			"UserTitleEnabled": false,
+			"Tooltip": "Play the next track",
 			"Controllers": [
 				"Keypad"
 			],
@@ -41,16 +37,15 @@
 					"Name": "Next",
 					"Title": "Next",
 					"Image": "imgs/actions/next",
-					"TitleAlignment": "middle"
+					"TitleAlignment": "bottom"
 				}
 			]
 		},
 		{
-			"Name": "Previous Song",
+			"Name": "Previous",
 			"UUID": "com.smrkn.youtube-music-desktop.previous",
 			"Icon": "imgs/actions/previous/icon",
-			"Tooltip": "previous track.",
-			"UserTitleEnabled": false,
+			"Tooltip": "Play the previous track",
 			"Controllers": [
 				"Keypad"
 			],
@@ -59,7 +54,7 @@
 					"Name": "Previous",
 					"Title": "Previous",
 					"Image": "imgs/actions/previous",
-					"TitleAlignment": "middle"
+					"TitleAlignment": "bottom"
 				}
 			]
 		}
@@ -70,6 +65,7 @@
 	"Description": "Integration with th-ch/youtube-music",
 	"Icon": "imgs/plugin/marketplace",
 	"SDKVersion": 2,
+	"PropertyInspectorPath": "ui/api-settings.html",
 	"Software": {
 		"MinimumVersion": "6.4"
 	},
