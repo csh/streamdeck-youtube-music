@@ -1,11 +1,14 @@
 {
     "scripts": {
         "build": "rollup -c",
-        "watch": "rollup -c -w --watch.onEnd=\"streamdeck restart com.smrkn.youtube-music-desktop\""
+        "watch": "rollup -c -w --watch.onEnd=\"streamdeck restart com.smrkn.youtube-music-desktop\"",
+        "lint:check": "prettier . --check"
     },
     "type": "module",
+    "prettier": "@elgato/prettier-config",
     "devDependencies": {
         "@elgato/cli": "^1.2.0",
+        "@elgato/prettier-config": "^0.2.6",
         "@rollup/plugin-commonjs": "^28.0.3",
         "@rollup/plugin-node-resolve": "^15.3.1",
         "@rollup/plugin-terser": "^0.4.4",
